@@ -683,10 +683,6 @@ ul {
     width: 45px;
     height: 45px;
 
-    border: 1px solid #c9a227;
-
-    color: #c9a227;
-
     font-size: 25px;
 }
 
@@ -869,8 +865,6 @@ ul {
     height: 45px;
 
     flex-shrink: 0;
-
-    border: 1px solid #c9a227;
 
     color: #ffffff;
 
