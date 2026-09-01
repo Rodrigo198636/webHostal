@@ -1,0 +1,1796 @@
+/* =========================================
+   REFUGIO LATITUD 52
+   ESTILOS PRINCIPALES
+   ========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap');
+
+
+/* =========================================
+   RESET
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    background: #102c3d;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.hero {
+    min-height: 100vh;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(8, 28, 40, 0.82) 0%,
+            rgba(8, 28, 40, 0.68) 45%,
+            rgba(8, 28, 40, 0.45) 100%
+        ),
+        url("../img/fondo.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    position: relative;
+}
+
+
+/* =========================================
+   NAVBAR
+   ========================================= */
+
+.navbar {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+    padding: 25px 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Logo */
+
+    .logo img {
+        width: 145px;
+        height: auto;
+        display: block;
+        border-radius: 50%;
+    }
+
+
+/* Menú */
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+
+.nav-menu a {
+    font-size: 13px;
+    font-weight: 500;
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #c9a227;
+}
+
+
+/* =========================================
+   CONTENIDO HERO
+   ========================================= */
+
+.hero-content {
+    width: 100%;
+    max-width: 1400px;
+
+    min-height: calc(100vh - 100px);
+
+    margin: 0 auto;
+    padding: 60px 50px 80px;
+
+    display: grid;
+    grid-template-columns: 1fr 420px;
+
+    align-items: center;
+
+    gap: 80px;
+}
+
+
+/* =========================================
+   TEXTO
+   ========================================= */
+
+.hero-text {
+    max-width: 650px;
+}
+
+.eyebrow {
+    margin-bottom: 20px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+    color: #c9a227;
+}
+
+.hero-text h1 {
+    margin-bottom: 25px;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: clamp(60px, 7vw, 100px);
+    font-weight: 500;
+
+    line-height: 0.95;
+}
+
+.hero-text h1 span {
+    color: #c9a227;
+}
+
+.hero-description {
+    max-width: 540px;
+
+    margin-bottom: 35px;
+
+    font-size: 17px;
+    font-weight: 300;
+
+    line-height: 1.8;
+
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+/* =========================================
+   TARJETA DE CONTACTO
+   ========================================= */
+
+.contact-card {
+    width: 100%;
+    padding: 35px;
+
+    background: rgba(10, 30, 42, 0.35);
+
+    color: #ffffff;
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+   
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.20);
+}
+
+.contact-card {
+    border-radius: 8px;
+}
+
+.contact-card h2 {
+    color: #ffffff;
+}
+
+.contact-card > p {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.form-group label {
+    color: #ffffff;
+}
+
+/* =========================================
+   FORMULARIO
+   ========================================= */
+
+.form-group {
+    margin-bottom: 17px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #ffffff;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 12px 13px;
+
+    border: 1px solid #d8d8d8;
+
+    background: #ffffff;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+
+    color: #203746;
+
+    outline: none;
+
+    transition: border-color 0.3s ease;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 95px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #c9a227;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #a5abad;
+}
+
+
+/* Botón formulario */
+
+.contact-card button {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    background: #203746;
+
+    color: #ffffff;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.contact-card button:hover {
+    background: #c9a227;
+    color: #203746;
+}
+
+/* =========================================
+   REFUGIO LATITUD 52
+   HOJA DE ESTILOS PRINCIPAL
+   ========================================= */
+
+
+/* =========================================
+   FUENTES
+   ========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap');
+
+
+/* =========================================
+   RESET GENERAL
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    background: #102c3d;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* =========================================
+   HERO - PÁGINA PRINCIPAL
+   ========================================= */
+
+.hero {
+    min-height: 100vh;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(8, 28, 40, 0.82) 0%,
+            rgba(8, 28, 40, 0.68) 45%,
+            rgba(8, 28, 40, 0.45) 100%
+        ),
+        url("../img/fondo.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+
+/* =========================================
+   NAVEGACIÓN
+   ========================================= */
+
+.navbar {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+    padding: 25px 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Logo */
+
+.logo img {
+    width: 145px;
+    height: auto;
+
+    display: block;
+
+    border-radius: 50%;
+}
+
+
+/* Menú */
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+
+.nav-menu a {
+    font-size: 13px;
+    font-weight: 500;
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #c9a227;
+}
+
+
+/* Botón hamburguesa */
+
+.menu-toggle {
+    display: none;
+
+    background: transparent;
+    border: none;
+
+    color: #ffffff;
+
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   CONTENIDO DEL HERO
+   ========================================= */
+
+.hero-content {
+    width: 100%;
+    max-width: 1400px;
+
+    min-height: calc(100vh - 100px);
+
+    margin: 0 auto;
+
+    padding: 60px 50px 80px;
+
+    display: grid;
+    grid-template-columns: 1fr 420px;
+
+    align-items: center;
+
+    gap: 80px;
+}
+
+
+/* =========================================
+   TEXTO DEL HERO
+   ========================================= */
+
+.hero-text {
+    max-width: 650px;
+}
+
+.eyebrow {
+    margin-bottom: 20px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+    color: #c9a227;
+}
+
+.hero-text h1 {
+    margin-bottom: 25px;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: clamp(60px, 7vw, 100px);
+    font-weight: 500;
+
+    line-height: 0.95;
+}
+
+.hero-text h1 span {
+    color: #c9a227;
+}
+
+.hero-description {
+    max-width: 540px;
+
+    margin-bottom: 35px;
+
+    font-size: 17px;
+    font-weight: 300;
+
+    line-height: 1.8;
+
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+/* =========================================
+   FORMULARIO DE CONTACTO
+   ========================================= */
+
+.contact-card {
+    width: 100%;
+
+    padding: 35px;
+
+    background: transparent;
+
+    color: #ffffff;
+
+    border: 1px solid rgba(255, 255, 255, 0.35);
+
+    box-shadow: none;
+}
+
+.contact-card h2 {
+    margin-bottom: 10px;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 30px;
+    font-weight: 500;
+
+    color: #ffffff;
+}
+
+.contact-card > p {
+    margin-bottom: 25px;
+
+    font-size: 13px;
+    line-height: 1.6;
+
+    color: rgba(255, 255, 255, 0.85);
+}
+
+
+/* =========================================
+   CAMPOS DEL FORMULARIO
+   ========================================= */
+
+.form-group {
+    margin-bottom: 17px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #ffffff;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 12px 13px;
+
+    border: 1px solid #d8d8d8;
+
+    background: #ffffff;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+
+    color: #203746;
+
+    outline: none;
+
+    transition: border-color 0.3s ease;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 95px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #c9a227;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #a5abad;
+}
+
+
+/* Botón */
+
+.contact-card button {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    background: #203746;
+
+    color: #ffffff;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.contact-card button:hover {
+    background: #c9a227;
+    color: #203746;
+}
+
+
+/* =========================================
+   ELEMENTOS GENERALES DE SECCIONES
+   ========================================= */
+
+.section-eyebrow {
+    margin-bottom: 18px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+    color: #c9a227;
+}
+
+.section-line {
+    width: 60px;
+    height: 2px;
+
+    margin: 25px 0 30px;
+
+    background: #c9a227;
+}
+
+.location-info {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.location-icon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 45px;
+    height: 45px;
+
+    border: 1px solid #c9a227;
+
+    color: #c9a227;
+
+    font-size: 25px;
+}
+
+.location-info strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.location-info small {
+    font-size: 12px;
+
+    color: #71818a;
+}
+
+
+/* =========================================
+   PÁGINA - EL REFUGIO
+   ========================================= */
+
+.page-header {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 100;
+
+    background: transparent;
+}
+
+/* =========================================
+   PÁGINA - EL REFUGIO
+   ========================================= */
+
+.refugio-page {
+    min-height: 100vh;
+
+    margin: 0;
+
+    padding: 180px 50px 100px;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(8, 28, 40, 0.82) 0%,
+            rgba(8, 28, 40, 0.68) 45%,
+            rgba(8, 28, 40, 0.45) 100%
+        ),
+        url("../img/fondo.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: #203746;
+}
+
+.refugio-page-container {
+    max-width: 1400px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   TÍTULO - EL REFUGIO
+   ========================================= */
+
+.refugio-page-title {
+    max-width: 850px;
+
+    margin: 0 auto 80px;
+
+    text-align: center;
+}
+
+.refugio-page-title h1 {
+    margin-bottom: 20px;
+
+    margin-top: 40px;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: clamp(50px, 6vw, 80px);
+    font-weight: 500;
+
+    line-height: 1;
+
+    color: #ffffff;
+}
+
+.refugio-page-title .section-line {
+    margin: 25px auto 30px;
+}
+
+.intro-text {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    font-size: 17px;
+    line-height: 1.8;
+
+    color: #ffffff;
+}
+
+
+/* =========================================
+   PRESENTACIÓN - EL REFUGIO
+   ========================================= */
+
+.refugio-page-content {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 80px;
+
+    margin-bottom: 110px;
+}
+
+.refugio-page-text {
+    max-width: 600px;
+}
+
+.refugio-page-text h2 {
+    margin-bottom: 25px;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 42px;
+    font-weight: 500;
+
+    line-height: 1.15;
+
+    color: #ffffff;
+}
+
+.refugio-page-text p {
+    margin-bottom: 20px;
+
+    font-size: 15px;
+    line-height: 1.8;
+
+    color: rgba(255, 255, 255, 0.85);
+}
+
+
+/* =========================================
+   UBICACIÓN
+   ========================================= */
+
+.location-info {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 30px;
+    color: #ffffff;
+    
+}
+
+.location-icon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 45px;
+    height: 45px;
+
+    flex-shrink: 0;
+
+    border: 1px solid #c9a227;
+
+    color: #ffffff;
+
+    font-size: 25px;
+}
+
+.location-info strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.location-info small {
+    font-size: 12px;
+
+    color: #ffffff;
+}
+
+
+/* =========================================
+   MAPA DE UBICACIÓN
+   ========================================= */
+
+.refugio-map {
+    width: 100%;
+    max-width: 550px;
+
+    aspect-ratio: 4 / 3;
+
+    overflow: hidden;
+
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+}
+
+.refugio-map {
+    border-radius: 8px;
+}
+
+.refugio-map iframe {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    border: none;
+}
+
+/* =========================================
+   GALERÍA
+   ========================================= */
+
+.refugio-gallery {
+    padding-top: 30px;
+
+    text-align: center;
+}
+
+.gallery-title {
+    margin-bottom: 40px;
+}
+
+.gallery-title h2 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: 42px;
+    font-weight: 500;
+
+    color: #ffffff;
+}
+
+
+/* =========================================
+   CARRUSEL
+   ========================================= */
+
+.refugio-carousel {
+    position: relative;
+
+    width: 80%;
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    aspect-ratio: 16 / 9;
+
+    overflow: hidden;
+
+    background: #203746;
+
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+}
+
+.refugio-carousel {
+    border-radius: 8px;
+}
+
+.carousel-track {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-slide {
+    display: none;
+
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-slide.active {
+    display: block;
+}
+
+.refugio-carousel img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: contain;
+
+    background: #203746;
+}
+
+
+/* =========================================
+   BOTONES DEL CARRUSEL
+   ========================================= */
+
+.carousel-button {
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 45px;
+    height: 45px;
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+
+    background: rgba(16, 44, 61, 0.45);
+
+    color: #ffffff;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.carousel-button:hover {
+    background: #c9a227;
+
+    color: #203746;
+}
+
+.carousel-prev {
+    left: 20px;
+}
+
+.carousel-next {
+    right: 20px;
+}
+
+
+/* =========================================
+   INDICADORES
+   ========================================= */
+
+.carousel-dots {
+    position: absolute;
+
+    bottom: 20px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+
+    gap: 8px;
+}
+
+.carousel-dot {
+    width: 9px;
+    height: 9px;
+
+    border-radius: 50%;
+
+    border: 1px solid #ffffff;
+
+    background: transparent;
+
+    cursor: pointer;
+}
+
+.carousel-dot.active {
+    background: #c9a227;
+
+    border-color: #c9a227;
+}
+
+.refugio-carousel img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: contain;
+
+    background: #203746;
+}
+
+/* =========================================
+   PÁGINA - HABITACIONES
+   ========================================= */
+
+.habitaciones-page {
+    min-height: 100vh;
+
+    margin: 0;
+
+    padding: 180px 50px 100px;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(8, 28, 40, 0.82) 0%,
+            rgba(8, 28, 40, 0.68) 45%,
+            rgba(8, 28, 40, 0.45) 100%
+        ),
+        url("../img/fondo.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: #ffffff;
+}
+
+.habitaciones-container {
+    max-width: 1400px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   TÍTULO - HABITACIONES
+   ========================================= */
+
+.habitaciones-title {
+    max-width: 850px;
+
+    margin: 0 auto 80px;
+
+    text-align: center;
+}
+
+.habitaciones-title h1 {
+    margin-bottom: 20px;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: clamp(50px, 6vw, 80px);
+    font-weight: 500;
+
+    line-height: 1;
+
+    color: #ffffff;
+}
+
+.habitaciones-title .section-line {
+    margin: 25px auto 30px;
+}
+
+.habitaciones-title .intro-text {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    font-size: 17px;
+    line-height: 1.8;
+
+    color: rgba(255, 255, 255, 0.85);
+}
+
+
+/* =========================================
+   GRILLA DE HABITACIONES
+   ========================================= */
+
+.habitaciones-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(280px, 420px));
+
+    justify-content: center;
+
+    gap: 40px;
+}
+
+/* =========================================
+   TARJETA DE HABITACIÓN
+   ========================================= */
+
+.habitacion-card {
+    overflow: hidden;
+
+    background: rgba(16, 44, 61, 0.75);
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    backdrop-filter: blur(4px);
+
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.habitacion-card {
+    border-radius: 8px;
+}
+
+.habitacion-card:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(201, 162, 39, 0.7);
+}
+
+
+/* =========================================
+   IMAGEN DE HABITACIÓN
+   ========================================= */
+
+.habitacion-image {
+    width: 100%;
+
+    aspect-ratio: 4 / 3;
+
+    overflow: hidden;
+}
+
+.habitacion-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.habitacion-card:hover .habitacion-image img {
+    transform: scale(1.03);
+}
+
+
+/* =========================================
+   INFORMACIÓN DE HABITACIÓN
+   ========================================= */
+
+.habitacion-info {
+    padding: 28px 25px 30px;
+}
+
+.habitacion-info .section-eyebrow {
+    margin-bottom: 10px;
+
+    font-size: 10px;
+}
+
+.habitacion-info h2 {
+    margin-bottom: 15px;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 30px;
+    font-weight: 500;
+
+    color: #ffffff;
+}
+
+.habitacion-info p:last-child {
+    margin: 0;
+
+    font-size: 13px;
+    line-height: 1.7;
+
+    color: rgba(255, 255, 255, 0.78);
+}
+
+/* =========================================
+   COMODIDADES
+   ========================================= */
+
+.amenities {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 15px 25px;
+
+    margin-top: 35px;
+}
+
+.amenity {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.amenity-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 38px;
+    height: 38px;
+
+    color: #c9a227;
+
+    font-size: 18px;
+}
+
+/* =========================================
+   REDES SOCIALES - LATERAL
+   ========================================= */
+
+.social-sidebar {
+    position: fixed;
+
+    right: 0;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+
+    width: 165px;
+    height: 60px;
+
+    padding-left: 15px;
+
+    border-radius: 30px 0 0 30px;
+
+    text-decoration: none;
+
+    color: #ffffff;
+
+    transform: translateX(105px);
+
+    transition: transform 0.35s ease;
+}
+
+.social-item:hover {
+    transform: translateX(0);
+}
+
+
+/* =========================================
+   ÍCONOS
+   ========================================= */
+
+.social-icon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 35px;
+    height: 35px;
+
+    margin-right: 12px;
+
+    font-size: 24px;
+}
+
+.social-name {
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   COLORES
+   ========================================= */
+
+.social-item.whatsapp {
+    background: #20d66b;
+}
+
+.social-item.instagram {
+    background: linear-gradient(
+        90deg,
+        #ff8a3d,
+        #c42c9b
+    );
+}
+
+.social-item.facebook {
+    background: #1877f2;
+}
+
+/* =========================================
+   RESPONSIVE - HABITACIONES
+   ========================================= */
+
+@media (max-width: 1000px) {
+
+    .habitaciones-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .habitaciones-page {
+        padding: 150px 20px 70px;
+    }
+
+    .habitaciones-title {
+        margin-bottom: 55px;
+    }
+
+    .habitaciones-title h1 {
+        font-size: 50px;
+    }
+
+    .habitaciones-title .intro-text {
+        font-size: 15px;
+    }
+
+    .habitaciones-grid {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+    .habitacion-info {
+        padding: 25px 22px 28px;
+    }
+
+    .habitacion-info h2 {
+        font-size: 28px;
+    }
+        /* =========================================
+    REDES SOCIALES - CELULAR
+    ========================================= */
+
+    .social-item {
+        width: 125px;
+        height: 45px;
+
+        padding-left: 10px;
+
+        transform: translateX(80px);
+    }
+
+    .social-item:hover {
+        transform: translateX(0);
+    }
+
+    .social-icon {
+        width: 28px;
+        height: 28px;
+
+        margin-right: 8px;
+
+        font-size: 19px;
+    }
+
+    .social-name {
+        font-size: 12px;
+    }
+}
+/* =========================================
+   RESPONSIVE - TABLET
+   ========================================= */
+
+@media (max-width: 1000px) {
+
+    /* Hero */
+
+    .navbar {
+        padding: 20px 30px;
+    }
+
+    .nav-menu {
+        gap: 20px;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+        padding: 50px 30px 70px;
+    }
+
+    .hero-text {
+        max-width: 700px;
+    }
+
+    .contact-card {
+        max-width: 500px;
+    }
+
+
+    /* El Refugio */
+
+    .refugio-page-content {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .refugio-page-text {
+        max-width: 700px;
+    }
+
+    .refugio-map {
+        max-width: 700px;
+    }
+}
+
+
+/* =========================================
+   RESPONSIVE - CELULAR
+   ========================================= */
+
+@media (max-width: 650px) {
+
+    /* Navegación */
+
+    .navbar {
+        padding: 18px 20px;
+
+        flex-direction: row;
+
+        gap: 0;
+    }
+
+    .logo img {
+        width: 125px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+
+    /* Menú hamburguesa */
+
+    .nav-menu {
+        position: absolute;
+
+        top: 85px;
+        left: 20px;
+        right: 20px;
+
+        padding: 20px;
+
+        display: flex;
+
+        flex-direction: column;
+        align-items: center;
+
+        gap: 20px;
+
+        background: rgba(16, 44, 61, 0.55);
+
+        border: 1px solid rgba(201, 162, 39, 0.45);
+
+        backdrop-filter: blur(6px);
+
+        opacity: 0;
+        visibility: hidden;
+
+        transform: translateY(-10px);
+
+        transition:
+            opacity 0.35s ease,
+            transform 0.35s ease,
+            visibility 0.35s ease;
+    }
+
+    .nav-menu.active {
+        opacity: 1;
+
+        visibility: visible;
+
+        transform: translateY(0);
+    }
+
+
+    /* Hero */
+
+    .hero {
+        background-position: center;
+    }
+
+    .hero-content {
+        padding: 45px 20px 60px;
+    }
+
+    .eyebrow {
+        font-size: 10px;
+
+        letter-spacing: 2.5px;
+    }
+
+    .hero-text h1 {
+        font-size: 58px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+
+    /* Formulario */
+
+    .contact-card {
+        padding: 25px;
+    }
+
+    .contact-card h2 {
+        font-size: 26px;
+    }
+
+
+    /* El Refugio */
+
+    .refugio-page {
+        padding: 70px 20px;
+    }
+
+    .refugio-page-title {
+        margin-bottom: 60px;
+    }
+
+    .refugio-page-title h1 {
+        font-size: 50px;
+    }
+
+    .intro-text {
+        font-size: 15px;
+    }
+
+    .refugio-page-content {
+        margin-bottom: 80px;
+    }
+
+    .refugio-page-text h2 {
+        font-size: 35px;
+    }
+
+    .gallery-title h2 {
+        font-size: 35px;
+    }
+
+
+/* Carrusel */
+
+.refugio-carousel {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+}
+
+.carousel-button {
+    width: 38px;
+    height: 38px;
+
+    font-size: 18px;
+}
+}
+/* =========================================
+   sacar hamburguer de escritorio
+   ========================================= */
+.menu-toggle {
+    display: none;
+
+    background: transparent;
+    border: none;
+
+    color: #ffffff;
+
+    font-size: 30px;
+
+    cursor: pointer;
+}
+/* =========================================
+   RESPONSIVE - CELULAR
+   ========================================= */
+
+@media (max-width: 650px) {
+
+    .navbar {
+        padding: 18px 20px;
+
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .logo img {
+        width: 125px;
+    }
+
+    /* Botón hamburguesa */
+
+    .menu-toggle {
+        display: block;
+
+        background: transparent;
+        border: none;
+
+        color: #ffffff;
+
+        font-size: 30px;
+
+        cursor: pointer;
+    }
+
+    /* Menú */
+
+    .nav-menu {
+        position: absolute;
+
+        top: 85px;
+        left: 20px;
+        right: 20px;
+
+        padding: 20px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        background: rgba(16, 44, 61, 0.55);
+
+        border: 1px solid rgba(201, 162, 39, 0.45);
+        opacity: 0;
+        visibility: hidden;
+
+        transform: translateY(-10px);
+
+        transition:
+            opacity 0.35s ease,
+            transform 0.35s ease,
+            visibility 0.35s ease;
+    }
+
+    .nav-menu.active {
+        opacity: 1;
+        visibility: visible;
+
+        transform: translateY(0);
+    }
+
+
+    /* Hero */
+
+    .hero {
+        background-position: center;
+    }
+
+    .hero-content {
+        padding: 45px 20px 60px;
+    }
+
+    .eyebrow {
+        font-size: 10px;
+        letter-spacing: 2.5px;
+    }
+
+    .hero-text h1 {
+        font-size: 58px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+
+    /* Formulario */
+
+    .contact-card {
+        padding: 25px;
+    }
+
+    .contact-card h2 {
+        font-size: 26px;
+    }
+}
