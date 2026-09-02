@@ -246,6 +246,7 @@ ul {
     padding: 12px 13px;
 
     border: 1px solid #d8d8d8;
+    border-radius: 6px;
 
     background: #ffffff;
 
@@ -283,6 +284,8 @@ ul {
     padding: 14px;
 
     border: none;
+
+    border-radius: 6px;
 
     background: #203746;
 
@@ -489,10 +492,12 @@ ul {
 
     font-family: 'Playfair Display', serif;
 
-    font-size: clamp(60px, 7vw, 100px);
+    font-size: clamp(65px, 7.5vw, 105px);
     font-weight: 500;
 
-    line-height: 0.95;
+    line-height: 0.9;
+
+    letter-spacing: -2px;
 }
 
 .hero-text h1 span {
@@ -1395,6 +1400,44 @@ ul {
     background: #1877f2;
 }
 
+/* =========================================
+   SELECTOR DE IDIOMA
+   ========================================= */
+
+.language-selector {
+    position: fixed;
+    top: 25px;
+    right: 30px;
+    z-index: 200;
+    
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.language-btn {
+    padding: 4px 2px;
+    border: none;
+    background: transparent;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.language-btn.active {
+    color: #c9a227;
+}
+
+.language-btn:hover {
+    color: #c9a227;
+}
 /* =========================================
    RESPONSIVE - HABITACIONES
    ========================================= */

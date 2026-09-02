@@ -79,7 +79,11 @@
 </div>
 
 <body>
-
+    <div class="language-selector">
+        <button class="language-btn active" data-lang="es">ES</button>
+        <span>|</span>
+        <button class="language-btn" data-lang="en">EN</button>
+    </div>
     <!-- HERO -->
     <header class="hero">
 
@@ -95,10 +99,10 @@
             </button>
 
             <ul class="nav-menu">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="refugio.html">El Refugio</a></li>
-                <li><a href="habitaciones.html">Habitaciones</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#inicio" data-i18n="nav_inicio">Inicio</a></li>
+                <li><a href="refugio.html" data-i18n="nav_refugio">El Refugio</a></li>
+                <li><a href="habitaciones.html" data-i18n="nav_habitaciones">Habitaciones</a></li>
+                <li><a href="#contacto" data-i18n="nav_contacto">Contacto</a></li>
             </ul>
 
         </nav>
@@ -108,16 +112,19 @@
 
             <div class="hero-text">
 
-                <p class="eyebrow">USHUAIA · TIERRA DEL FUEGO</p>
+                <p class="eyebrow" data-i18n="hero_eyebrow">USHUAIA · TIERRA DEL FUEGO</p>
 
                 <h1>
-                    Refugio<br>
-                    <span>Latitud 52</span>
+                    <span data-i18n="hero_title">Un hogar en el</span>
+                    <span data-i18n="hero_title_highlight">Fin del Mundo</span>
                 </h1>
 
-                <p class="hero-description">
-                    Un lugar para descansar, disfrutar y descubrir
-                    Ushuaia desde el corazón del Fin del Mundo.
+                <p class="hero-description" data-i18n="hero_description">
+                    Hay lugares que simplemente se visitan, y otros que se sienten.
+                    En Ushuaia encontramos nuestro pequeño refugio: un espacio cálido
+                    y tranquilo donde descansar después de descubrir los paisajes del
+                    Fin del Mundo, compartir una charla, disfrutar un desayuno y
+                    sentirse un poquito más cerca de casa.
                 </p>
 
             </div>
@@ -126,9 +133,9 @@
             <!-- Formulario -->
             <div class="contact-card" id="contacto">
 
-                <h2>¿Querés consultarnos?</h2>
+                <h2 data-i18n="contact_title">¿Querés consultarnos?</h2>
 
-                <p>
+                <p data-i18n="contact_description">
                     Estamos para ayudarte. Dejanos tu mensaje
                     y nos pondremos en contacto.
                 </p>
@@ -136,42 +143,46 @@
                 <form>
 
                     <div class="form-group">
-                        <label for="nombre">Nombre</label>
+                        <label for="nombre" data-i18n="contact_name">Nombre</label>
                         <input
                             type="text"
                             id="nombre"
                             name="nombre"
-                            placeholder="Tu nombre">
+                            placeholder="Tu nombre"
+                            data-i18n-placeholder="contact_name_placeholder">
                     </div>
 
                     <div class="form-group">
-                        <label for="email">Correo electrónico</label>
+                        <label for="email" data-i18n="contact_email">Correo electrónico</label>
                         <input
                             type="email"
                             id="email"
                             name="email"
-                            placeholder="tu@email.com">
+                            placeholder="tu@email.com"
+                            data-i18n-placeholder="contact_email_placeholder">
                     </div>
 
                     <div class="form-group">
-                        <label for="telefono">Teléfono</label>
+                        <label for="telefono" data-i18n="contact_phone">Teléfono</label>
                         <input
                             type="tel"
                             id="telefono"
                             name="telefono"
-                            placeholder="Tu teléfono">
+                            placeholder="Tu teléfono"
+                            data-i18n-placeholder="contact_phone_placeholder">
                     </div>
 
                     <div class="form-group">
-                        <label for="mensaje">Mensaje</label>
+                        <label for="mensaje" data-i18n="contact_message">Mensaje</label>
                         <textarea
                             id="mensaje"
                             name="mensaje"
                             rows="4"
-                            placeholder="¿En qué podemos ayudarte?"></textarea>
+                            placeholder="¿En qué podemos ayudarte?"
+                            data-i18n-placeholder="contact_message_placeholder"></textarea>
                     </div>
 
-                    <button type="button">
+                    <button type="button" data-i18n="contact_button">
                         ENVIAR CONSULTA
                     </button>
 
