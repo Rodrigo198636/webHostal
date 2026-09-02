@@ -232,7 +232,7 @@ const translations = {
         hero_title_highlight: "Fin del Mundo",
         hero_description:
         "Hay lugares que simplemente se visitan, y otros que se sienten. En Ushuaia encontramos nuestro pequeño hogar: un espacio cálido y tranquilo donde descansar después de descubrir los paisajes del Fin del Mundo, compartir una charla, disfrutar un desayuno y sentirse un poquito más cerca de casa.",
-        contact_title: "¿Querés consultarnos?",
+        contact_title: "¿Querés contactarnos?",
         contact_description:
             "Estamos para ayudarte. Dejanos tu mensaje y nos pondremos en contacto.",
         contact_name: "Nombre",
