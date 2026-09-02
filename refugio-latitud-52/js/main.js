@@ -243,7 +243,46 @@ const translations = {
         contact_phone_placeholder: "Tu teléfono",
         contact_message: "Mensaje",
         contact_message_placeholder: "¿En qué podemos ayudarte?",
-        contact_button: "ENVIAR CONSULTA",        
+        contact_button: "ENVIAR CONSULTA",   
+        refugio_page_title: "Nuestro refugio",
+        refugio_intro:
+            "Un pequeño refugio en el Fin del Mundo, pensado para relajarse y disfrutar Ushuaia.",   
+        refugio_title: "Un lugar para sentirse como en casa",
+        refugio_text_1:
+            "Refugio Latitud 52 es un alojamiento cálido y tranquilo, pensado para quienes buscan disfrutar de Ushuaia y tener un lugar confortable donde descansar.",
+        refugio_text_2:
+            "Un espacio sencillo y acogedor, donde cada detalle busca que tu estadía sea cómoda y agradable.",
+        refugio_location:
+            "A solo 5 minutos del centro",
+        refugio_city:
+            "Ushuaia · Tierra del Fuego",
+        amenity_wifi: "Wi-Fi",
+        amenity_breakfast: "Desayuno",
+        amenity_rooms: "Habitaciones confortables",  
+        gallery_eyebrow: "CONOCÉ NUESTRO ESPACIO",
+        gallery_title: "Un lugar para disfrutar",
+        gallery_alt_entrance: "Entrada de Refugio Latitud 52",
+        gallery_alt_breakfast_area: "Desayunador",
+        gallery_alt_breakfast: "Desayuno",
+        gallery_alt_bathroom: "Baño",
+        gallery_alt_balcony: "Balcón",
+        gallery_alt_ushuaia: "Ushuaia",
+        carousel_previous: "Imagen anterior",
+        carousel_next: "Imagen siguiente",   
+        room1_eyebrow: "HABITACIÓN 01",
+        room1_title: "Habitación 1",
+        room1_description:
+            "Un espacio cálido y confortable para descansar después de conocer Ushuaia.",
+        room1_alt: "Habitación 1",
+        room2_eyebrow: "HABITACIÓN 02",
+        room2_title: "Habitación 2",
+        room2_description:
+            "Un espacio pensado para disfrutar de una estadía tranquila y agradable.",
+        room2_alt: "Habitación 2",       
+        rooms_page_title: "Habitaciones",
+        rooms_intro:
+            "Espacios cómodos y acogedores para descansar y disfrutar tu estadía en Ushuaia.",   
+                                 
     },
 
     en: {
@@ -271,7 +310,47 @@ const translations = {
         contact_phone_placeholder: "Your phone number",
         contact_message: "Message",
         contact_message_placeholder: "How can we help you?",
-        contact_button: "SEND INQUIRY",            
+        contact_button: "SEND INQUIRY",   
+        refugio_page_title: "Our refuge",
+        refugio_intro:
+            "A little refuge at the End of the World, designed to relax and enjoy Ushuaia.",   
+        refugio_title: "A place that feels like home",
+        refugio_text_1:
+            "Refugio Latitud 52 is a warm and peaceful accommodation, ideal for those who want to enjoy Ushuaia and have a comfortable place to rest.",
+        refugio_text_2:
+            "A simple and welcoming space, where every detail is designed to make your stay comfortable and pleasant.",
+        refugio_location:
+            "Just 5 minutes from downtown",
+        refugio_city:
+            "Ushuaia · Tierra del Fuego",
+        amenity_wifi: "Wi-Fi",
+        amenity_breakfast: "Breakfast",
+        amenity_rooms: "Comfortable rooms",            
+        gallery_eyebrow: "DISCOVER OUR SPACE",
+        gallery_title: "A place to enjoy",
+        gallery_alt_entrance: "Entrance of Refugio Latitud 52",
+        gallery_alt_breakfast_area: "Breakfast area",
+        gallery_alt_breakfast: "Breakfast",
+        gallery_alt_bathroom: "Bathroom",
+        gallery_alt_balcony: "Balcony",
+        gallery_alt_ushuaia: "Ushuaia",
+        carousel_previous: "Previous image",
+        carousel_next: "Next image",     
+        room1_eyebrow: "ROOM 01",
+        room1_title: "Room 1",
+        room1_description:
+            "A warm and comfortable space to rest after exploring Ushuaia.",
+        room1_alt: "Room 1",
+
+        room2_eyebrow: "ROOM 02",
+        room2_title: "Room 2",
+        room2_description:
+            "A space designed for a peaceful and pleasant stay.",
+        room2_alt: "Room 2",      
+        rooms_page_title: "Rooms",
+
+        rooms_intro:
+            "Comfortable and welcoming spaces to rest and enjoy your stay in Ushuaia.",                                                 
     }
 
 };
@@ -300,6 +379,27 @@ function cambiarIdioma(idioma) {
 
         if (translations[idioma][clave]) {
             elemento.placeholder = translations[idioma][clave];
+        }
+
+    });    
+    document.querySelectorAll("[data-i18n-alt]").forEach(elemento => {
+
+        const clave = elemento.dataset.i18nAlt;
+
+        if (translations[idioma][clave]) {
+            elemento.alt = translations[idioma][clave];
+        }
+
+    });    
+    document.querySelectorAll("[data-i18n-aria]").forEach(elemento => {
+
+        const clave = elemento.dataset.i18nAria;
+
+        if (translations[idioma][clave]) {
+            elemento.setAttribute(
+                "aria-label",
+                translations[idioma][clave]
+            );
         }
 
     });    
