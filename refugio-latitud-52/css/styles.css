@@ -1438,6 +1438,46 @@ ul {
 .language-btn:hover {
     color: #c9a227;
 }
+
+.site-footer {
+    width: 100%;
+    padding: 22px 30px;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(8, 28, 40, 0.82) 0%,
+            rgba(8, 28, 40, 0.68) 45%,
+            rgba(8, 28, 40, 0.45) 100%
+        ),
+        url("../img/fondo.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #aeb6c0;
+}
+
+.site-footer a {
+    color: #c9a227;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.site-footer a:hover {
+    color: #ffffff;
+}
 /* =========================================
    RESPONSIVE - HABITACIONES
    ========================================= */
@@ -1459,6 +1499,10 @@ ul {
     .habitaciones-title {
         margin-bottom: 55px;
     }
+
+    .habitaciones-title {
+        margin-top: 60px;
+    }    
 
     .habitaciones-title h1 {
         font-size: 50px;
@@ -1510,6 +1554,19 @@ ul {
     .social-name {
         font-size: 12px;
     }
+}
+
+@media (max-width: 600px) {
+
+    .site-footer {
+        padding: 18px 15px;
+    }
+
+    .site-footer p {
+        font-size: 11px;
+        line-height: 1.6;
+    }
+
 }
 /* =========================================
    RESPONSIVE - TABLET
@@ -1672,6 +1729,10 @@ ul {
     .refugio-page {
         padding: 70px 20px;
     }
+    
+    .refugio-page-title {
+        margin-top: 100px;
+    }    
 
     .refugio-page-title {
         margin-bottom: 60px;
