@@ -282,7 +282,11 @@ const translations = {
         rooms_page_title: "Habitaciones",
         rooms_intro:
             "Espacios cómodos y acogedores para descansar y disfrutar tu estadía en Ushuaia.",   
-                                 
+        room3_title: "Habitación 3",
+        room3_description:
+            "Un ambiente acogedor y confortable para disfrutar de una estadía agradable en Ushuaia.",
+        room3_alt: "Habitación 3",           
+                            
     },
 
     en: {
@@ -350,7 +354,11 @@ const translations = {
         rooms_page_title: "Rooms",
 
         rooms_intro:
-            "Comfortable and welcoming spaces to rest and enjoy your stay in Ushuaia.",                                                 
+            "Comfortable and welcoming spaces to rest and enjoy your stay in Ushuaia.",        
+        room3_title: "Room 3",
+        room3_description:
+            "A welcoming and comfortable space to enjoy a pleasant stay in Ushuaia.",
+        room3_alt: "Room 3",                                                              
     }
 
 };

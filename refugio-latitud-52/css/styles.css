@@ -1963,3 +1963,32 @@ ul {
         font-size: 26px;
     }
 }
+
+.habitacion-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 100%;
+    max-width: 420px;
+}
+
+/* Fondo exclusivo para móviles */
+@media (max-width: 768px) {
+
+    .hero,
+    .refugio-page,
+    .habitaciones-page {
+        background-image:
+            linear-gradient(
+                90deg,
+                rgba(8, 28, 40, 0.82),
+                rgba(8, 28, 40, 0.65)
+            ),
+            url("../img/fondo-mobile.jpeg");
+
+        background-size: cover;
+        background-position: 35% center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+
+}
