@@ -1992,3 +1992,12 @@ ul {
     }
 
 }
+/* Footer móvil */
+@media (max-width: 768px) {
+    .site-footer {
+        background-image: none;
+        background-color: transparent;
+        background-attachment: scroll;
+    }
+}
+
